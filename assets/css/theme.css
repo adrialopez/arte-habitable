@@ -647,7 +647,7 @@ a {
 .project-slide {
     flex-shrink: 0;
     width: clamp(240px, 27vw, 390px);
-    height: clamp(320px, 60vh, 480px);
+    height: max(320px, 72vh);
     position: relative;
     overflow: hidden;
     cursor: pointer;
@@ -1401,7 +1401,12 @@ a {
 
     .portafolio.section {
         position: relative;
-        height: 88svh;
+        height: auto;
+        padding-bottom: 1.25rem;
+    }
+
+    .portafolio__cards-area {
+        height: 68svh;
     }
 
     .projects-track {
@@ -1412,12 +1417,21 @@ a {
 
     .project-slide {
         width: 78vw;
-        height: calc(88svh - 130px);
+        height: 100%;
     }
 
     .project-slide__actions {
         opacity: 1;
         transform: none;
+    }
+
+    .portafolio__more {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        text-align: center;
+        padding: 1rem 0 0;
     }
 
     .portafolio__nav--prev {
