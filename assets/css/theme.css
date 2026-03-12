@@ -1406,7 +1406,7 @@ a {
     }
 
     .portafolio__cards-area {
-        height: 68svh;
+        height: 58svh;
     }
 
     .projects-track {
@@ -1430,8 +1430,11 @@ a {
         bottom: auto;
         left: auto;
         transform: none;
+        z-index: auto;
         text-align: center;
-        padding: 1rem 0 0;
+        padding: 1.5rem 1.5rem 1rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        margin-top: 1rem;
     }
 
     .portafolio__nav--prev {
